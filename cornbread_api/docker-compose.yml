@@ -3,8 +3,22 @@
 services:
   rails:
     build: .
+    env_file:
+      - "secret.env"
     ports:
       - "3000:3000"
+    depends_on:
+      - "mongo"
+      - "redis"
+      - "sidekiq"
+
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq
+    env_file:
+      - "secret.env"
+    ports:
+      - '8010:8010'
 
   mongo:
     image: docker.io/library/mongo:6.0.8
@@ -17,4 +31,3 @@ services:
     image: docker.io/library/redis:7.0
     ports:
       - "6379"
-
