@@ -1,0 +1,20 @@
+---
+
+services:
+  rails:
+    build: .
+    ports:
+      - "3000:3000"
+
+  mongo:
+    image: docker.io/library/mongo:6.0.8
+    env_file:
+      - "secret.env"
+    ports:
+      - "27017"
+
+  redis:
+    image: docker.io/library/redis:7.0
+    ports:
+      - "6379"
+

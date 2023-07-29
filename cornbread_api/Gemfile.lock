@@ -142,6 +142,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.3-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.3-x86_64-linux)
+      racc (~> 1.4)
     public_suffix (5.0.3)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -178,6 +180,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis (4.8.1)
     redis-client (0.14.1)
       connection_pool
     regexp_parser (2.8.1)
@@ -231,6 +234,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -241,6 +245,7 @@ DEPENDENCIES
   mongoid!
   puma (~> 5.0)
   rails (~> 7.0.6)
+  redis (~> 4.0)
   selenium-webdriver
   sidekiq
   sprockets-rails
