@@ -1,5 +1,4 @@
 *.env
-*.json
 .venv
 secret.env
 dump.rdb
