@@ -22,6 +22,9 @@ module CornbreadApi
   class Application < Rails::Application
     config.load_defaults 7.0
 
+    # Uncomment if needed to handle API requests to endpoints made
+    #config.api_only = true
+
     #config.log_level = :debug
     #config.log_tags = [:subdomain, :uuid]
     config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
