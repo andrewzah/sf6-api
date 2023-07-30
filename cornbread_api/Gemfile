@@ -13,6 +13,9 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'mongoid', git: 'https://github.com/mongodb/mongoid.git', branch: 'master'
 
+gem 'httparty'
+gem 'nokogiri'
+
 gem "sidekiq"
 
 # Use Redis adapter to run Action Cable in production

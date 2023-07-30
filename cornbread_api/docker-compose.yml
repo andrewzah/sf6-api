@@ -25,9 +25,11 @@ services:
     env_file:
       - "secret.env"
     ports:
-      - "27017"
+      - "27017:27017"
+    volumes:
+      - "./.docker-data/:/data/db:rw"
 
   redis:
     image: docker.io/library/redis:7.0
     ports:
-      - "6379"
+      - "6379:6379"

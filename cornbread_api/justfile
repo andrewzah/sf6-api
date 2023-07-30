@@ -1,0 +1,8 @@
+s:
+  bundle exec rails server
+
+c:
+  bundle exec rails console
+
+si:
+  bundle exec sidekiq
