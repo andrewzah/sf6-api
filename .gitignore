@@ -1,4 +1,6 @@
 *.env
 .venv
 secret.env
+secret.sh
 dump.rdb
+.docker-data
