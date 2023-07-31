@@ -43,4 +43,10 @@ class Scrape::RankingsJob
       puts 'error, script tag __NEXT_DATA__ couldnt be found'
     end
   end
+
+  # Placeholder cron job \/
+  # cron_job = Sidekiq::Cron::Job.create(name: 'Rankings worker - set to every morning at 9', cron: '0 9 * * *', class: 'Scrape::RankingsJob') 
+  # unless cron_job.save
+  #   puts cron_job.errors # will return array of errors
+  # end
 end
