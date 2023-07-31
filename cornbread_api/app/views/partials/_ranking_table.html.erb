@@ -1,0 +1,24 @@
+<div>
+<h1>Data Table</h1>
+  <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player ID</th>
+          <th>Character</th>
+          <th>LP</th>
+        </tr>
+      </thead>
+    <tbody>
+      <% @data_table.items.each do |item| %>
+        <tr>
+          <td><%= player.rank %></td> 
+          <td><%= player.id %></td>
+          <td><%= player.character %></td>
+          <td><%= player.lp %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+  <%# Need database set up to properly configure to it %>
