@@ -27,7 +27,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - "./.docker-data/:/data/db:rw"
+      - "./.docker-data/mongo/:/data/db:rw"
 
   redis:
     image: docker.io/library/redis:7.0
