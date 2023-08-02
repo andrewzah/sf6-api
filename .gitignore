@@ -2,5 +2,5 @@
 .venv
 secret.env
 secret.sh
-dump.rdb
+*.rdb
 .docker-data

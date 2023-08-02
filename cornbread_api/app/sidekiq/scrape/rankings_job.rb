@@ -5,7 +5,7 @@ require 'nokogiri'
 
 class Scrape::RankingsJob
   include Sidekiq::Job
-  sidekiq_options :queue => :default , :retry => 1
+  sidekiq_options :queue => :short , :retry => 1
 
 
   def perform

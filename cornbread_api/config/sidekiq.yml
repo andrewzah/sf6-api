@@ -1,6 +1,11 @@
+:verbose: false
 :concurrency: 5
 :pidfile: tmp/pids/sidekiq.pid
 staging:
   :concurrency: 10
 production:
   :concurrency: 10
+queues:
+  - [ "notification", 5 ]
+  - [ "short " , 5 ]
+  - [ "long", 1 ]
