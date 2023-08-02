@@ -10,7 +10,7 @@ class Scrape::BuildScrapeQueueJob
 
     collection_name = 'cornbread-rankings'
     stored_pages = client[collection_name].find({}, projection: { 'query.page' => 1 }).map { |doc| doc['query']['page'].to_i }
-    total_pages = (1..84498).to_a
+    total_pages = (1..84516).to_a
 
     remaining_pages = total_pages - stored_pages
 
